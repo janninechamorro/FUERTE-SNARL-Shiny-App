@@ -4,17 +4,14 @@
 
 # Loading Packages
 library(shiny)
+library(bslib)
 
-# Here is some text to test!
-
-# Define UI for app the draws a histogram ----
-
+# Define UI ----
 ui <- page_sidebar(
   title = "title panel",
   sidebar = sidebar("sidebar"),
   "main contents"
 )
-
 
 # Define server logic ----
 server <- function(input, output) {
